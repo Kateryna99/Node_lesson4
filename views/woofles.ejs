@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <title>Our Woofles</title>
+</head>
+<body>
+   <hr>
+   <h1>Our Woofles</h1>
+   <hr>
+
+   <div class="woofles">
+       <% wooflesList.forEach(woofle =>{%>
+           <a href="/woofles/<%=woofle.id%>" class="woofle">
+               <div class="woofle-img">
+                   <img src="<%=woofle.image%>" alt="<%=woofle.breed%>">
+               </div>
+
+               <h5 class="woofle-title"><%=woofle.breed%></h5>
+           </a>
+       <%})%>
+   </div>
+</body>
+</html>  

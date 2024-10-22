@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Woofle Form</title>
+</head>
+<body>
+<h2>Add your woofle</h2>
+<hr>
+
+<form method="post" action="/woofles">
+    <div>
+        <label for="breed">Breed:</label>
+        <input type="text" id="breed" name="breed" required>
+    </div>
+
+    <div>
+        <label for="lifeSpan">Life Span (years):</label>
+        <input type="text" id="lifeSpan" name="lifeSpan" required>
+    </div>
+
+    <div>
+        <label for="image">Image:</label>
+        <input type="text" id="image" name="image" required>
+    </div>
+
+    <div>
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" required></textarea>
+    </div>
+
+    <div>
+        <label for="features">Features (comma separated):</label>
+        <input type="text" id="features" name="features" required>
+    </div>
+
+    <button type="submit">Add Woofle</button>
+</form>
+</body>
+</html>
